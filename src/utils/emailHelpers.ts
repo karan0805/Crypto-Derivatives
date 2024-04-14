@@ -10,21 +10,17 @@ const smtpConfig = {
   },
 };
 
-// Create a Nodemailer transporter using the SMTP configuration
 const transporter = nodemailer.createTransport(smtpConfig);
 
-// Function to send the password reset email
 export async function sendResetEmail(email: string, resetToken: string) {
   try {
-    // Compose the email
     const mailOptions = {
-      from: 'GreeX <karan0805@zohomail.in>',
+      from: 'GreeX Support <karan0805@zohomail.in>',
       to: email,
       subject: 'Password Reset Link',
       html: `<p>Click the following link to reset your password:</p>
-             <p><a href="${env.NEXTAUTH_URL}/auth/reset-password?token=${resetToken}">Reset Password</a></p>`,
+             <p><a href="${env.FRONTEND_URL}/auth/reset-password?token=${resetToken}">Reset Password</a></p>`,
     };
-    // Send the email
     await transporter.sendMail(mailOptions);
   } catch (error) {
     console.error('Error sending email:', error);
@@ -34,14 +30,12 @@ export async function sendResetEmail(email: string, resetToken: string) {
 
 export async function sendWelcomeEmail(email: string) {
   try {
-    // Compose the email
     const mailOptions = {
-      from: 'GreeX <karan0805@zohomail.in>',
+      from: 'GreeX Support <karan0805@zohomail.in>',
       to: email,
       subject: 'Welcome to GreeX',
       html: `<p>This will be the email with welcome message and introduction to platform</p>`,
     };
-    // Send the email
     await transporter.sendMail(mailOptions);
   } catch (error) {
     console.error('Error sending email:', error);
