@@ -6,6 +6,12 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <Favicon />
+        {process.env.NODE_ENV === 'production' ? (
+          <>
+            {/* eslint-disable-next-line @next/next/next-script-for-ga */}
+            <script async src="/clarity.js" />
+          </>
+        ) : null}
       </Head>
       <body>
         <Main />
