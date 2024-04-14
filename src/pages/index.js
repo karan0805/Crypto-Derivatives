@@ -19,7 +19,7 @@ const Home = () => {
     nodeToRender = (
       <main className={`flex h-[90vh] flex-col  gap-10 bg-white p-24`}>
         <h1 className="text-center text-xl font-bold">
-          XBTUSD Chart Using Bitmez Historical & WebSocket Api
+          XBTUSD Chart Using Bitmex Historical & WebSocket Api
         </h1>
         <Dashboard />
       </main>
@@ -27,10 +27,14 @@ const Home = () => {
   } else {
     nodeToRender = (
       <main
-        className={`flex h-[90vh] flex-col items-center justify-center gap-10 bg-black p-24`}
+        style={{
+          backgroundImage:
+            'linear-gradient(rgb(3, 7, 18) 60%, rgb(6, 41, 79) 100%)',
+        }}
+        className={`flex h-[90vh] flex-col items-center justify-center gap-10 bg-[#030712] p-24`}
       >
-        <div className="flex flex-col place-items-center gap-5">
-          <h2 className="text-bold text-2xl text-white">
+        <div className="flex flex-col place-items-center gap-10">
+          <h2 className="text-4xl font-bold text-white">
             GreeX Assignment Submission by Karan
           </h2>
           <Link
