@@ -106,7 +106,7 @@ Signup.getLayout = function getLayout(page) {
       seo={{
         title: 'Sign up',
         description: 'Sign up',
-        canonical: 'https://greex-assignment.vercel.app/auth/signup',
+        canonical: 'https://crypto-derivatives.vercel.app/auth/signup',
       }}
     >
       {page}

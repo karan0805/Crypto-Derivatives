@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport(smtpConfig);
 export async function sendResetEmail(email: string, resetToken: string) {
   try {
     const mailOptions = {
-      from: 'GreeX Support <karan0805@zohomail.in>',
+      from: 'Support <karan0805@zohomail.in>',
       to: email,
       subject: 'Password Reset Link',
       html: `<p>Click the following link to reset your password:</p>
@@ -31,9 +31,9 @@ export async function sendResetEmail(email: string, resetToken: string) {
 export async function sendWelcomeEmail(email: string) {
   try {
     const mailOptions = {
-      from: 'GreeX Support <karan0805@zohomail.in>',
+      from: 'Support <karan0805@zohomail.in>',
       to: email,
-      subject: 'Welcome to GreeX',
+      subject: 'Welcome to Platform',
       html: `<p>This will be the email with welcome message and introduction to platform</p>`,
     };
     await transporter.sendMail(mailOptions);

@@ -8,9 +8,9 @@ const HomeView = () => (
     }}
     className={`flex h-[90vh] flex-col items-center justify-center gap-10 bg-[#030712] p-24`}
   >
-    <div className="flex flex-col place-items-center gap-10">
-      <h2 className="text-4xl font-bold text-white">
-        GreeX Assignment Submission by Karan
+    <div className="flex max-w-7xl flex-col place-items-center gap-10">
+      <h2 className=" text-center text-3xl font-bold text-white">
+        Implementing Tradingview Lightweight Charts with Bitmex Derivatives Api
       </h2>
       <Link
         rel="noopener noreferrer"

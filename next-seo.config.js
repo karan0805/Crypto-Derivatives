@@ -1,13 +1,13 @@
 const config = {
-  defaultTitle: 'GreeX Assignment Submission by Karan',
-  titleTemplate: '%s | GreeX',
+  defaultTitle: 'Crypto Derivatives',
+  titleTemplate: '%s | Crypto Derivatives',
   description: ``,
-  canonical: 'https://greex-assignment.vercel.app/',
+  canonical: 'https://crypto-derivatives.vercel.app/',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://greex-assignment.vercel.app/',
-    siteName: 'GreeX',
+    url: 'https://crypto-derivatives.vercel.app/',
+    siteName: 'Crypto Derivatives',
   },
   twitter: {
     handle: '@handle',

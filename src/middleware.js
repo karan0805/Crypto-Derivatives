@@ -9,7 +9,7 @@ export function middleware(req) {
   let domain = req.headers.get('host');
   let path = req.nextUrl.pathname;
 
-  if (domain == 'www.greex.trading' && path !== '/') {
+  if (domain == 'www.example.com' && path !== '/') {
     return NextResponse.rewrite(new URL(`/comingsoon`, req.url));
   }
 }

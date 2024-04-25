@@ -120,7 +120,7 @@ Signin.getLayout = function getLayout(page) {
       seo={{
         title: 'Sign in',
         description: 'Sign in',
-        canonical: 'https://greex-assignment.vercel.app/auth/signin',
+        canonical: 'https://crypto-derivatives.vercel.app/auth/signin',
       }}
     >
       {page}

@@ -84,7 +84,7 @@ ForgotPassword.getLayout = function getLayout(page) {
       seo={{
         title: 'Forgot Password',
         description: 'Forgot Password',
-        canonical: 'https://greex-assignment.vercel.app/auth/forgotpassword', // Adjust the URL
+        canonical: 'https://crypto-derivatives.vercel.app/auth/forgotpassword', // Adjust the URL
       }}
     >
       {page}
