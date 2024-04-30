@@ -6,7 +6,7 @@ export const LandingHeader = () => {
 
   return (
     <header>
-      <div className="relative h-[10vh] bg-black">
+      <div className="relative h-[10vh] bg-[#030712]">
         <div className="mx-auto flex h-full items-center px-4 xl:container">
           <ul className="ml-auto items-center md:flex">
             {!session && (

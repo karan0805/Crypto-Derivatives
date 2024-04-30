@@ -4,14 +4,6 @@ import { useSession } from 'next-auth/react';
 import Dashboard from '@/components/dashboard';
 import HomeView from '@/components/homeview';
 
-const Loading = () => (
-  <main
-    className={`flex h-[90vh] flex-col items-center justify-center gap-10 bg-black p-24`}
-  >
-    Loading
-  </main>
-);
-
 export async function getServerSideProps() {
   try {
     const res = await fetch('https://www.bitmex.com/api/v1/instrument/active');
@@ -33,12 +25,11 @@ export async function getServerSideProps() {
 }
 
 const Home = ({ symbols }) => {
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
   const [symbol, setSymbol] = useState('XBTUSD');
 
   return (
     <>
-      {status === 'loading' && <Loading />}
       {session ? (
         <Dashboard symbol={symbol} setSymbol={setSymbol} symbols={symbols} />
       ) : (
